@@ -15,7 +15,7 @@ import { ProductList }  from "./pages/ProductList";
 const App = () => {
   const user = false
   return (
-      <Router>
+      <Router basename="/e-commerce-app">
         <Routes>
         <Route exact path="/" element={<Home/>} />
           <Route path="/products/:category" element={<ProductList/>} />
